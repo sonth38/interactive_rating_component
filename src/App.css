@@ -1,38 +1,112 @@
 .App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 18%);
+  position: relative;
+}
+
+.star-icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #2b3239;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.star-icon img {
+  margin: 10px;
+}
+
+.rate-body {
+  margin-top: 60px;
+}
+
+.card-body h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+}
+
+.card-body p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+
+.rate-box .rate-number {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2b3239;    
+  color: hsl(217, 12%, 63%);
+  margin-right: 24px;
+  font-weight: 600;
+}
+
+.rate-box .rate-number:last-child {
+  margin-right: 0px;
+}
+
+.card-body .rate-number:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.card-body .rate-number:active, .card-body .rate-number:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+
+}
+
+.card-body .btn-submit {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  margin: 30px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: none;
+}
+
+.card-body .btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.rated {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.thanks-icon {
+  text-align: center;
+  margin-top: 40px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-rated {
+  margin: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-rated .rate-selected {
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-rated .rate-selected p {
+  color:hsl(25, 97%, 53%);
+  background-color: #2b3239;
+  margin: auto;
+  width: 50%;
+  border-radius: 22px;
 }
